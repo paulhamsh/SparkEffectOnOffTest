@@ -2,6 +2,7 @@
 
 Some code to get current preset and turn  effects on and off   
 
+```
 #include "Spark.h"
 #include "SparkIO.h"
 
@@ -35,4 +36,6 @@ void loop() {
     }
   }
 }
+
+```
 
