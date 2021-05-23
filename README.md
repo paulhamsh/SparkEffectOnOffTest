@@ -31,6 +31,8 @@ void loop() {
   if (spark_io.get_message(&cmdsub, &msg, &preset)) { //there is something there
     if (cmdsub == 0x0301) {
       current = preset;
+      
+      // you can move these lines outside of this if - but they must only be called after 'current' is set with data!!
       spark_io.turn_effect_onoff(current.effects[0].EffectName, false);
       spark_io.turn_effect_onoff(current.effects[1].EffectName, true);
     }
