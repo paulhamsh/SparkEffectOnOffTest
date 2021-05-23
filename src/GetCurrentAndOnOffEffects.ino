@@ -73,7 +73,7 @@ void setup() {
   spark_comms.start_bt();
   spark_comms.connect_to_spark();
   
-  spark_comms.start_ser();
+  // not needed - spark_comms.start_ser();
   printit("Connected");
 
   delay(1000);
